@@ -1,0 +1,6 @@
+Our ICIP '15 code defaults to hexagons.
+The user may opt to use squares instead.
+The implications of each choice are detailed in our README file.
+In short, hexagons lead to more visually pleasing results; squares lead to 
+somewhat better results on the benchmarks. 
+The results in our paper were obtained using hexagons. 
