@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+  <title>Oren Freifeld</title>
+  <link rel="stylesheet" href="one_col_style.css">
+  <script>
+    function toggleVisibility(id) {
+      var el = document.getElementById(id);
+      el.style.display = (el.style.display === 'none') ? 'block' : 'none';
+    }
+  </script>
+</head>
+
+<body>
+
+<div id="container">
+  <div id="header">
+    <h2>Oren Freifeld</h2>
+    The Vision, Inference, and Learning (VIL) group<br>
+    orenfr@bgu.ac.il<br>
+    &#01488;&#01493;&#01512;&#01503;&#00032;&#01508;&#01512;&#01497;&#01497;&#01508;&#01500;&#01491;<br>
+    <center>
+      <img src="logos/Brown_logo.png" alt="Brown University" height=60>
+      <img src="logos/stanford.jpg" alt="Stanford University" height=60>
+      <img src="logos/MIT_logo.png" alt="MIT" height=60>
+      <img src="logos/BGU_logo.png" alt="BGU" height=60>
+    </center>
+  </div>
+
+  <div id="navigation">
+    <ul>
+      <li><a href="index.htm">Home</a></li>
+      <li><a href="research.htm">Research</a></li>
+      <li><a href="papers.htm">Publications</a></li>
+      <li><a href="cv.htm">CV</a></li>
+      <li><a href="students.htm">Students</a></li> 
+    </ul>
+  </div>
+
+  <div id="content">
+    <h3>Research Summary</h3>
+
+    <p>
+      My group works in the fields of computer vision, machine learning, and deep learning.
+      We usually focus in unsupervised or self-supervised settings, with applications involving images, videos, or time series. 
+      Our recent and current research focuses on:
+    </p>
+
+    <ol>
+<li>
+  <p><strong>Deep learning models for geometric alignment</strong> (for time series, 2D images, or 3D scenes). 
+    <a href="#" onclick="toggleVisibility('papers1'); return false;">Example papers:</a>
+    <span id="papers1" style="display:none; line-height:1.4; margin-top:4px;">
+      <a href="http://www2.compute.dtu.dk/~sohau/papers/aistats2016/hauberg_aistats2016.pdf">Hauberg et al.</a>, <strong>AISTATS 2016</strong><br>
+      <a href="./DTAN/ShapiraWeber_NeurIPS_2019.pdf">Shapira-Weber et al.</a>, <strong>NeurIPS 2019</strong><br>
+      <a href="https://openreview.net/forum?id=7IbLWa0anE">Shapira-Weber &amp; Freifeld</a>, <strong>ICML 2023</strong><br>
+      <a href="https://arxiv.org/pdf/2407.11850">Barel et al.</a>, <strong>ECCV 2024</strong><br>
+      <a href="https://arxiv.org/pdf/2505.23475">Shapira Weber et al.</a>, <strong>ICML 2025</strong><br>
+      <a href="https://arxiv.org/pdf/2510.14051">Naaman et al.</a>, <strong>ICCV 2025</strong><br>
+      <a href="https://arxiv.org/pdf/2502.06591">Shapira Weber &amp; Freifeld</a>, <strong>arXiv 2025</strong><br>
+      <a href="https://arxiv.org/pdf/2510.22842"</a>Hirsch et al.</a>, <strong>NeurIPS 2025</strong><br><br>
+      (many of these works above are built upon our efficient and highly expressive CPAB diffeomorphisms
+      [<a href="papers/freifeld_ICCV_2015.pdf">Freifeld et al.</a>, <strong>ICCV 2015</strong>],
+      [<a href="./papers/freifeld_etal_PAMI_2017">Freifeld et al.</a>, <strong>PAMI 2017</strong>] and/or
+      our diffeomorphic spatial transformer networks
+      [<a href="http://www2.compute.dtu.dk/~sohau/papers/cvpr2018/detlefsen_cvpr_2018.pdf">Skafte et al.</a>, <strong>CVPR 2018</strong>])
+    </span>
+  </p>
+</li>
+      
+            <li>
+        <p><strong>Video analysis.</strong>
+          <a href="#" onclick="toggleVisibility('papers2'); return false;">Example papers:</a>
+          <span id="papers2" style="display:none; line-height:1.4; margin-top:4px;">
+            <a href="./JA-POLS/chelly_CVPR_2020.pdf">Chelly et al.</a>, <strong>CVPR 2020</strong><br>
+            <a href="./papers/Erez_ECCV_2022.pdf">Erez et al.</a>, <strong>ECCV 2022</strong><br>
+            <a href="https://papers.nips.cc/paper_files/paper/2023/hash/240cc9ac4789351653d13cfcba4ee85c-Abstract-Conference.html">Uziel et al.</a>, <strong>NeurIPS 2023</strong></br>
+            <a href="https://arxiv.org/pdf/2510.14051">Naaman et al.</a>, <strong>ICCV 2025</strong><br>
+          </span>
+        </p>
+      </li>
+
+      <li>
+        <p><strong>Generic, task-agnostic improvements in deep learning</strong>, such as wavelet convolutions for large receptive fields and highly-expressive trainable activation functions.
+          <a href="#" onclick="toggleVisibility('papers3'); return false;">Example papers:</a>
+          <span id="papers3" style="display:none; line-height:1.4; margin-top:4px;">
+            <a href="https://arxiv.org/pdf/2407.07564">Chelly et al.</a>, <strong>ECCV 2024</strong><br>
+            <a href="https://arxiv.org/pdf/2407.05848">Finder et al.</a>, <strong>ECCV 2024</strong><br>
+            <a href="https://arxiv.org/pdf/2505.23185">Finder et al.</a>, <strong>ICML 2025</strong>
+          </span>
+        </p>
+      </li>
+
+      <li>
+        <p><strong>3D reconstruction and novel view synthesis</strong> using Gaussian Splatting (3DGS), typically enhanced by geometric deep features.
+          <a href="#" onclick="toggleVisibility('papers4'); return false;">Example papers:</a>
+          <span id="papers4" style="display:none; line-height:1.4; margin-top:4px;">
+            <a href="https://arxiv.org/pdf/2411.19588">Mualem et al.</a>, <strong>arXiv 2024</strong><br>
+             <a href="https://arxiv.org/pdf/2603.21936">Amoyal et al.</a>, <strong>CVPR 2026</strong>
+          </span>
+        </p>
+      </li>
+
+      <li>
+        <p><strong>Bayesian nonparametric (BNP) clustering</strong>, particularly fast, scalable inference for mixture models and deep models for BNP clustering.
+          <a href="#" onclick="toggleVisibility('papers5'); return false;">Example papers:</a>
+          <span id="papers5" style="display:none; line-height:1.4; margin-top:4px;">
+            <a href="./BASS/Uziel_ICCV_2019.pdf">Uziel et al.</a>, <strong>ICCV 2019</strong><br>
+            <a href="https://www.cs.bgu.ac.il/~dinari/papers/dpmm_hpml2019.pdf">Dinari et al.</a>, <strong>HPML 2019</strong><br>
+            <a href="./papers/Dinari_UAI_2020.pdf">Dinari &amp; Freifeld</a>, <strong>UAI 2020</strong><br>
+            <a href="https://arxiv.org/abs/2204.08988">Dinari et al.</a>, <strong>arXiv 2022</strong><br>
+            <a href="https://dinarior.github.io/papers/Dinari_AISTATS_streaming.pdf">Dinari &amp; Freifeld</a>, <strong>AISTATS 2022</strong><br>
+            <a href="https://openreview.net/pdf?id=rnzVBD8jqlq">Dinari &amp; Freifeld</a>, <strong>UAI 2022</strong><br>
+            <a href="https://arxiv.org/abs/2203.13661">Winter et al.</a>, <strong>AISTATS 2022</strong><br>
+            <a href="https://arxiv.org/abs/2203.14309">Ronen et al.</a>, <strong>CVPR 2022</strong><br>
+            <a href="https://arxiv.org/pdf/2507.04283">Uziel et al.</a>, <strong>ICML 2025</strong><br>
+            <a href="https://arxiv.org/pdf/2502.19337">Chelly et al.</a>, <strong>AISTATS 2025</strong>
+          </span>
+        </p>
+      </li>
+
+      
+      <li>
+        <p><strong>Underwater computer vision.</strong>
+          <a href="#" onclick="toggleVisibility('papers7'); return false;">Example papers:</a>
+          <span id="papers7" style="display:none; line-height:1.4; margin-top:4px;">
+            <a href="https://arxiv.org/pdf/2411.19588">Mualem et al.</a>, <strong>arXiv 2024</strong>
+          </span>
+        </p>
+      </li>
+    </ol>
+
+    <p>
+      My earlier work focused on statistics on manifolds (Lie groups and/or Riemannian manifolds) and modeling shape deformations.
+      <a href="#" onclick="toggleVisibility('papersOld'); return false;">Example papers:</a>
+      <span id="papersOld" style="display:none; line-height:1.4; margin-top:4px;">
+        <a href="./papers/freifeld_cvpr_2010.pdf">Freifeld et al.</a>, <strong>CVPR 2010</strong><br>
+        <a href="http://www.cs.brown.edu/~black/Papers/guanECCV10.pdf">Guan et al.</a>, <strong>ECCV 2010</strong><br>
+        <a href="./LieBodies/FreifeldAndBlack2012LieBodies.pdf">Freifeld et al.</a>, <strong>ECCV 2012</strong><br>
+        <a href="http://www.cs.brown.edu/people/zuffi/Site/Welcome_files/2012_Zuffi_CVPR.pdf">Zuffi et al.</a>, <strong>CVPR 2012</strong><br>
+        <a href="http://files.is.tue.mpg.de/shauberg/papers/NIPS2012/paper.pdf">Hauberg et al.</a>, <strong>NeurIPS 2012</strong><br>
+        <a href="./ModelTransport/FreifeldHaubergBlack_CVPR14_MT.pdf">Freifeld et al.</a>, <strong>CVPR 2014</strong><br>
+        <a href="http://people.csail.mit.edu/rcabezas/pubs/cabezas14_aerial.pdf">Cabezas et al.</a>, <strong>CVPR 2014</strong><br>
+        <a href="http://people.csail.mit.edu/jstraub/pub/straub2014mmf.pdf">Straub et al.</a>, <strong>CVPR 2014</strong><br>
+        <a href="http://people.csail.mit.edu/jstraub/download/straub2015dptgmm.pdf">Straub et al.</a>, <strong>AISTATS 2015</strong><br>
+        <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7839295">Straub et al.</a>, <strong>PAMI 2018</strong>
+      </span>
+    </p>
+
+    <p>In even more ancient history, I worked on statistical models for segmentation of MR Brain Images.</p>
+  </div>
+
+
+
+
+
+</div>
+
+
+
+
+</body>
+</html>
+
